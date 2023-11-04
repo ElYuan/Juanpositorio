@@ -3,10 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./estilos.css">
     <title>Documento</title>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js" defer></script>
 </head>
-<body>
-    
+<body id="site">
+    <div class="container"></div>
+        <div class="row py-5"></div>
+            <div class="col-6">
+                 <div class="col-12 pb-3">
+                    <input type="text" placeholder="Ingresa Tu Nombre:" class="form-control" id="inputName">
+                 </div>
+                 <div class="col-12 pb-3">
+                    <input type="text" placeholder="Ingresa Tu Apellido:" class="form-control" id="inputApellido">
+                 </div>
+                 <div class="col-12 pb-3">
+                    <button class="btn btn-primary w-100" id="button">Ingresar</button>
+                 </div>
+            </div>
+            <div class="col-6">
+                <p>Nombre: <label for="" id="textName"></label></p>
+                <p>Apellido: <label for="" id="textApellido"></label></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h1>Teclas Precionadas</h1>
+                <p id="keyboard"></p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
